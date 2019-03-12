@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'tm@8%kl$r6^jobaqg@!dh+_epb-&1h6jerst4)cpmg48t##n_)'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'WebsiteITD.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # 'django.db.backends.sqlite3',
+        'NAME': 'itd_prod', # os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USER': 'u_itadmin',
+        'PASSWORD': '1122332211',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -118,4 +122,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_ROOT = '/var/www/itdoctors.com/static/' #!Served my nginx for production
+
+STATIC_URL = 'https://static.itdoctors.com/' #'/static/'
