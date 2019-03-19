@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'WebsiteITD.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # 'django.db.backends.sqlite3',
-        'NAME': 'ITDdb', # os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'itddb', # os.path.join(BASE_DIR, 'db.sqlite3'),
         'USER': 'applicationusr',
         'PASSWORD': '1122332211',
         'HOST': 'localhost',
