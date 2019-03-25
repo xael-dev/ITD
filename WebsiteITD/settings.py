@@ -78,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # 'django.db.backends.sqlite3',
         'NAME': 'ITD_db', # os.path.join(BASE_DIR, 'db.sqlite3'),
-        'USER': 'db_admin',
+        'USER': 'db-admin',
         'PASSWORD': '1122332211',
         'HOST': 'localhost',
         'PORT': '',
