@@ -25,7 +25,7 @@ SECRET_KEY = 'DJ_SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['157.230.62.251']
+ALLOWED_HOSTS = ['142.93.56.120']
 
 
 # Application definition
@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'WebsiteITD.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # 'django.db.backends.sqlite3',
-        'NAME': 'itddb', # os.path.join(BASE_DIR, 'db.sqlite3'),
-        'USER': 'applicationusr',
+        'NAME': 'ITD_db', # os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USER': 'db_admin',
         'PASSWORD': '1122332211',
         'HOST': 'localhost',
         'PORT': '',
