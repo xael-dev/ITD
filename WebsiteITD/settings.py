@@ -23,13 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'DJ_SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-<<<<<<< HEAD
 ALLOWED_HOSTS = ['itdoctors.com', 'www.itdoctors.com', '142.93.56.120', 'localhost']
-=======
-ALLOWED_HOSTS = ['142.93.56.120']
->>>>>>> 88d7e7eba49b7304ac8c56dce544aa849b1b56b8
 
 
 # Application definition
