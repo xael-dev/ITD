@@ -26,7 +26,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['itdoctors.com', 'www.itdoctors.com','.itdoctors.com', '142.93.56.120', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -50,6 +49,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'WebsiteITD.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
