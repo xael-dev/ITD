@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'DJ_SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['itdoctors.com', 'www.itdoctors.com', '142.93.56.120', 'localhost']
+ALLOWED_HOSTS = ['itdoctors.com', 'www.itdoctors.com','.itdoctors.com', '142.93.56.120', 'localhost']
 
 
 # Application definition
@@ -75,9 +75,11 @@ WSGI_APPLICATION = 'WebsiteITD.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # 'django.db.backends.sqlite3',
-        'NAME': 'ITD_db', # os.path.join(BASE_DIR, 'db.sqlite3'),
-        'USER': 'db-admin',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'django.db.backends.sqlite3',
+        'NAME': 'itd',
+        # os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USER': 'itduser',
         'PASSWORD': '1122332211',
         'HOST': 'localhost',
         'PORT': '',
@@ -121,8 +123,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
-
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = { "/root/ITD/static/", }
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
