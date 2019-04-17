@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'DJ_SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['157.230.62.251']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'WebsiteITD.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # 'django.db.backends.sqlite3',
-        'NAME': 'itddb', # os.path.join(BASE_DIR, 'db.sqlite3'),
-        'USER': 'applicationusr',
-        'PASSWORD': '1122332211',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': '',
     }
 }
