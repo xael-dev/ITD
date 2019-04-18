@@ -37,7 +37,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!-- Navigation, NOTE: <a> elements are used to jump to particular area with scrollspy -->
-  <nav class="navbar navbar-light bg-white sticky-top">
+  <nav class="navbar navbar-light bg-white sticky-top" id="navbar">
     <a class="navbar-brand" href="#home">
       <img src={% static "img/ITDLogo.jpg" %} width ="240" height= "80">
     </a>
@@ -77,6 +77,10 @@
           <i class="far fa-credit-card"></i>
           Make a Payment
           </a>
+        </li>
+        <li class="nav-item">
+        <a href="javascript:void(0);" class="icon" onClick="expandFunction()">
+          <i class="fas fa-bars fa-2x"></i>
         </li>
       </ul>
   </nav>
@@ -297,7 +301,10 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src={% static "js/jquery.js" %}></script>
+  <script src={% static "js/javascript.js" %}></script>
   <script src=https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js></script>
+
+
 
 </body>
 
