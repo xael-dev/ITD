@@ -24,7 +24,8 @@ SECRET_KEY = 'DJ_SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['itdoctors.com', 'www.itdoctors.com','.itdoctors.com', '142.93.56.120', 'localhost']
+ALLOWED_HOSTS = ['itdoctors.com', 'www.itdoctors.com',
+                 '.itdoctors.com', '142.93.56.120', 'localhost']
 
 # Application definition
 
