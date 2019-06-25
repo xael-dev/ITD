@@ -102,8 +102,7 @@
               <form method="post">
                 <div class="form-row">
                   <div class="col-12 col-md-9 mb-2 mb-md-0">
-                    {% csrf_token %}
-                    {{form.as_p}}
+                    <input class="form-control form-control-lg" type="email" placeholder="Enter your email...">
                   </div>
                   <div class="col-12 col-md-3">
                     <button type="submit" class="btn btn-block btn-lg btn-primary">Subscribe!</button>
