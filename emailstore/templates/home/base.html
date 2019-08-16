@@ -36,81 +36,62 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!-- Navigation, NOTE: <a> elements are used to jump to particular area with scrollspy -->
-  <nav class="navbar navbar-light bg-white sticky-top" id="navbar">
-    <a class="navbar-brand" href="#home">
-      <img src={% static "img/ITDLogo.jpg" %} width ="240" height= "80">
-    </a>
-      <ul class ="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">
-          <i class="fab fa-wpforms"></i>
-          About
-          </a>
-        </li>
-        <li class ="nav-item">
-          <a class="nav-link" href="#services">
-          <i class="fas fa-tools"></i>
-          Services
-          </a>
-        </li>
-        <li class ="nav-item">
-          <a class="nav-link" href="#team">
-          <i class="fas fa-users"></i>
-          Meet The Team
-          </a>
-        </li>
-        <li class ="nav-item">
-          <a class="nav-link" href="#contact">
-          <i class="fas fa-phone"></i>
-          Contact
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.splashtop.com/sos-download?_ga=2.77162903.308159755.1554922056-984735932.1554922056">
-          <i class="fas fa-tint"></i>
-          Splashtop S.O.S
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://secure.usaepay.com/interface/epayform/VF136Y0uc6t0KZZI2z7ZQ491IF4YYr5Z/">
-          <i class="far fa-credit-card"></i>
-          Make A Payment
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.grade.us/itdoctors/">
-            <i class="fas fa-star"></i>
-            Leave A Review!
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://housecallpro.com/book/IT-Doctors/5434064e4b1b43a284e1e0dbf6e2eb61?attribution=Schedule%20An%20Appointment">
-            <i class="far fa-calendar-check"></i>
-            Schedule An Appointment
-          </a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg bg-white navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#home">
+        <img src={% static "img/ITDLogo.jpg" %} width="240" height="80">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.splashtop.com/sos-download?_ga=2.77162903.308159755.1554922056-984735932.1554922056">Splashtop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://secure.usaepay.com/interface/epayform/VF136Y0uc6t0KZZI2z7ZQ491IF4YYr5Z/">Payment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://g.page/itdrs/review">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://housecallpro.com/book/IT-Doctors/5434064e4b1b43a284e1e0dbf6e2eb61?attribution=Schedule%20An%20Appointment">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
   <!-- Masthead -->
   <span id="home"></span> 
     <header class="masthead text-white text-center shadow">
-      <div class="overlay"><!-- TODO: Add bg time-lapse here --></div>
+      <div class="overlay">
+      <img src="">
+      </div>
         <div class="container">
           <div class="row">
             <div class="col-xl-9 mx-auto">
-              <h1 class="mb-3">The Doctors are in...</h1>
-                <h2> Your technology problems are finally answered. Send us your email for more information! </h2>
+              <h1 class="mb-3">Upcoming Event!</h1>
+              <h2 class="mb-4"> Broward housing is hosting a Walk-A-Thon fundraiser, any donations are greatly appreciated! 
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-              <form method="post">
+              <form action="https://browardhousingsolutions.org/sponsor-a-walker/">
                 <div class="form-row">
-                  <div class="col-12 col-md-9 mb-2 mb-md-0">
-                    <input class="form-control form-control-lg" type="email" placeholder="Enter your email...">
-                  </div>
-                  <div class="col-12 col-md-3">
-                    <button type="submit" class="btn btn-block btn-lg btn-primary">Subscribe!</button>
-                  </div>
+                    <button type="submit" class="btn btn-block btn-lg btn-primary">Donate!</button>
                 </div>
               </form>
             </div>
