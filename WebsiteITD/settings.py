@@ -75,6 +75,7 @@ WSGI_APPLICATION = 'WebsiteITD.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# Module used for development and testing
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -86,7 +87,7 @@ WSGI_APPLICATION = 'WebsiteITD.wsgi.application'
 #     }
 # }
 
-
+# Module used for production purposes only!
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
