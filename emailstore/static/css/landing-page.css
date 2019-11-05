@@ -124,6 +124,24 @@ header.masthead h1 {
   font-size: 2rem;
 }
 
+/* Improperly altered tag, marking for later refactor */
+#button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  user-select: none;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #32d37b;
+  border: 1px solid transparent;
+  border-color: #32d37b;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
@@ -189,6 +207,13 @@ header.masthead h1 {
 
 .testimonials .testimonial-item {
   max-width: 18em;
+}
+
+/* Improperly altered tag, marking for later refactor */
+#img-item {
+	max-width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
 }
 
 .testimonials .testimonial-item img {
