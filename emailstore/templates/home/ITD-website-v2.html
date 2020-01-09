@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>IT Doctors - Manage Your Technology!</title>
+
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template-->
+    <link href={% static "/css/home.css" %} rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!-- TODO // Fix quality with tablets, change size of 'navbar-toggler-icon' on smaller devices. -->
+    <span id="home"></span>
+    <nav id="nav-shadow"
+        class="navbar navbar-light bg-white navber-custom navbar-expand-md justify-content-between sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-nav"
+                aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto d-block order-1 order-md-0 w-25">
+                <img src={% static "img/ITDLogo.jpg" %} width="200px" height="80px"
+                    alt="">
+            </a>
+            <div class="navbar-collapse collapse w-25">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://g.page/itdrs/review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.splashtop.com/sos-download?_ga=2.77162903.308159755.1554922056-984735932.1554922056">Splashtop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://housecallpro.com/book/IT-Doctors/5434064e4b1b43a284e1e0dbf6e2eb61?attribution=Schedule%20An%20Appointment">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary btn-lg ml-auto">Contact Us!</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Image & CTA -->
+    <section id="section1">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4 text-center mt-5 mx-auto">IT issues?</h1>
+                <p class="lead text-center">We got you covered!</p>
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-primary btn-lg mt-5 mx-auto">Contact Us!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="section2">
+        <div class="container my-5">
+            <h4 class="text-center pt-3">See what our clients have to say!</h4>
+            <hr>
+            <div id="carousel-review-slides" class="carousel slide align-self-center" data-ride="carousel">
+                <div class="carousel-inner v-center" style="height: 350px">
+                    <div class="carousel-item active">
+                        <h1 class="d-block w-100 text-center">"Great and fast service! Super nice and friendly staff.
+                            They had myproblem resolved in less than 10 minutes!"
+                        </h1>
+                        <h3 class="d-block w-100 text-center mt-5"> - Angel Estrada: Google Reviews</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="d-block w-100 text-center"> "IT Doctors has provided superb technical care, along
+                            with the professional assurance that is so important when dealing with someone's 'digital'
+                            life. I have and will continue to recommend Steve and his team!"
+                        </h1>
+                        <h3 class="d-block w-100 text-center mt-5"> - Rich Schwartz: Google Reviews</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="d-block w-100 text-center">
+                            "Great customer service and knowledge! Always have been very helpful."
+                        </h1>
+                        <h3 class="d-block w-100 text-center mt-5"> - Avi Lasko: Google Reviews</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="d-block w-100 text-center">
+                            "They were very informative and helped me find the best solution to my repair needs."
+                        </h1>
+                        <h3 class="d-block w-100 text-center mt-5"> - Steven Brownlee</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="d-block w-100 text-center">
+                            "Really good attention [to detail] and my laptop was ready almost immediately!"
+                        </h1>
+                        <h3 class="d-block w-100 text-center mt-5"> - Marlyn Malave</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section id="section3">
+        <!-- Break/Fix Service Card -->
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-md-6 order-md-1">
+                    <img src="/Users/home/Desktop/Projects/WebProjects/ITD-v.2/person-soldering-chip-2628105.jpg"
+                        class="card-img" alt="">
+                </div>
+                <div class="col-md-6 order-md-2 align-self-center">
+                    <div class="card-body">
+                        <h2 class="display-4 text-center mt-3">
+                            Break/Fix Services
+                        </h2>
+                        <hr>
+                        <p class="lead text-center px-5">
+                            With a highly esteemed, and freindly staff we pride ourselves on our customer-first
+                            philosophy. Bringing you swift solutions, and expert advice to meet all your computer
+                            needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Corporate Service Card -->
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-md-6 order-md-2">
+                    <img src="/Users/home/Desktop/Projects/WebProjects/ITD-v.2/multi-cultural-people-3184634.jpg"
+                        class="card-img" alt="">
+                </div>
+                <div class="col-md-6 order-md-1 align-self-center">
+                    <div class="card-body">
+                        <h2 class="display-4 text-center mt-3">
+                            Corporate Services
+                        </h2>
+                        <hr>
+                        <p class="lead text-center px-3">
+                            These are the details of our corporate services!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Website Service Card -->
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-md-6 order-md-1">
+                    <img src="/Users/home/Desktop/Projects/WebProjects/ITD-v.2/zany-jadraque-571205-unsplash.jpg"
+                        class="card-img" alt="">
+                </div>
+                <div class="col-md-6 order-md-2 align-self-center">
+                    <div class="card-body my-auto">
+                        <h4 class="display-4 text-center mt-3">
+                            Website Services
+                        </h4>
+                        <hr>
+                        <p class="lead text-center px-3">
+                            These are the details of our website services!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content and Thumbnails (Django CMS) -->
+    <section id=" section4">
+    </section>
+    <footer></footer>
+
+    <!-- Custom JS -->
+    <script src="/Users/home/Desktop/Projects/WebProjects/ITD-v.2/javascript.js"></script>
+
+    <!-- Bootstrap !required JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
