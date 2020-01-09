@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Ubuntu+Condensed&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 5000px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+p{
+    font-family: 'Lato', 'sans-serif';
+}
+
+hr{
+    width: 50%;
+}
+
+#nav-shadow{
+    z-index: 9999;
+    -webkit-box-shadow: 0px 14px 58px -28px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 14px 58px -28px rgba(0,0,0,0.56);
+    box-shadow: 0px 14px 58px -28px rgba(0,0,0,0.56);
+}
+
+.jumbotron {
+    background: url("/Users/home/Desktop/Projects/WebProjects/ITD-v.2/apple-business-computer-connection-392018.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 50vh;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 4px 20px 0px rgba(136,136,136,0.5);
+    -moz-box-shadow: 6px 4px 20px 0px rgba(136,136,136,0.5);
+    box-shadow: 6px 4px 20px 0px rgba(136,136,136,0.5);
+}
+
+/* v-center is a simple custom utility to align items vertically in parent container */
+.v-center { 
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 4px 20px 0px rgba(136,136,136,0.5);
+    -moz-box-shadow: 6px 4px 20px 0px rgba(136,136,136,0.5);
+    box-shadow: 6px 4px 20px 0px rgba(136,136,136,0.5);
+}
+
+.card-img {
+    border-radius: 10px;
+}
