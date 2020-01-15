@@ -65,6 +65,17 @@ html body nav.navbar.navbar-light.bg-white.sticky-top ul.nav.nav-button.nav-fill
   }
 }
 
+#nav-shadow{
+  z-index: 9999;
+  -webkit-box-shadow: 0px 14px 58px -28px rgba(0,0,0,0.56);
+  -moz-box-shadow: 0px 14px 58px -28px rgba(0,0,0,0.56);
+  box-shadow: 0px 14px 58px -28px rgba(0,0,0,0.56);
+}
+
+.nav-item{
+  padding: 10px;
+}
+
 a.anchor{
   display: block;
   position: relative;
