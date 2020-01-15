@@ -36,7 +36,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!-- Navigation, NOTE: <a> elements are used to jump to particular area with scrollspy -->
-  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top" id="mainNav">
+  {% comment %} <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#home">
         <img src={% static "img/ITDLogo.jpg" %} width="180" height="75">
@@ -71,26 +71,58 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> {% endcomment %}
+  <span id="home"></span>
+    <nav id="nav-shadow"
+        class="navbar navbar-light bg-white navber-custom navbar-expand-md justify-content-between sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-nav"
+                aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto d-block order-1 order-md-0 w-25">
+                <img src={% static "img/ITDLogo.jpg" %} width="200px" height="80px"
+                    alt="">
+            </a>
+            <div class="navbar-collapse collapse w-25">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://g.page/itdrs/review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.splashtop.com/sos-download?_ga=2.77162903.308159755.1554922056-984735932.1554922056">Splashtop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://housecallpro.com/book/IT-Doctors/5434064e4b1b43a284e1e0dbf6e2eb61?attribution=Schedule%20An%20Appointment">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary btn-lg ml-auto">Contact Us!</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
   <!-- Masthead -->
   <span id="home"></span> 
-    <header class="masthead text-white text-center">
-    <div class="overlay"></div>
-    <canvas id="seasonal-canvas"></canvas>
-      <div class="container">
-        <div class="row">
-            <div class="col-md-9 mx-auto">
-              <h1 class="mb-5">Need some IT help? Were here for you!</h1>
+    <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4 text-center mt-5 mx-auto">IT issues?</h1>
+                <p class="lead text-center">We got you covered!</p>
             </div>
-            <div class="col-md-5 col-lg-5 col-xl-4 mx-auto">
-              <div class="center">
-                <a href="#contact" class="btn btn-success btn-lg" role="button">Contact</a>
-              </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-primary btn-lg mt-5 mx-auto">Contact Us!</button>
             </div>
         </div>
-      </div>
-    </div>
   </header>
   
   <!-- About Section -->
