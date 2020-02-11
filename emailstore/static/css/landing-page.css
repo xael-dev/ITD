@@ -103,7 +103,7 @@ header.masthead > * {
 
 header.masthead {
   position: relative;
-  background-color: #006aff;
+  background-color: #9A031E;
   background-image: url() no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
@@ -112,7 +112,7 @@ header.masthead {
 
 header.masthead .overlay {
   position: absolute;
-  background-color: #006aff;
+  background-color: #9A031E;
   height: 100%;
   width: 100%;
   top: 0;
