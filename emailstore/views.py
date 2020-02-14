@@ -7,7 +7,7 @@ from emailstore.forms import EmailForm
 
 def index(request):
     form = EmailForm()
-    return render(request, 'home/base.html', {'form': form})
+    return render(request, 'home/index-0.html', {'form': form})
 
 
 def post(request):
