@@ -305,26 +305,17 @@ footer.footer {
   display: none;
 }
 
-/* When the screen size falls under 800px in width (This should also work on tablet sized devices), all links are hidden execpt for "navbar-brand". Show the bar menu */
-
-/* @media screen and (max-width: 800px) {
-  .navbar a:not(:first-child) {display:none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
+/* Mobile Styles */
+@media only screen and (max-width:400px){
+  
 }
 
-@media screen and (max-width: 800px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-} */
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width:960px){
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) and (max-width: 960px){
+  
+}
