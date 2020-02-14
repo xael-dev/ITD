@@ -186,9 +186,25 @@ header.masthead h1 {
   }
 }
 
-.jumbotron{
+.jumbotron {
+  background: url("/static/img/apple-business-computer-connection-392018.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 50vh;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 4px 20px 0px rgba(136,136,136,0.5);
+  -moz-box-shadow: 6px 4px 20px 0px rgba(136,136,136,0.5);
+  box-shadow: 6px 4px 20px 0px rgba(136,136,136,0.5);
+}
+
+#about {
   margin-bottom: 0;
-  background-image: linear-gradient(to bottom right,#2b71ff, #2053ba);
+  background-image: linear-gradient(to bottom right, #2b71ff, #2053ba);
   color: #fffaff;
 }
 
