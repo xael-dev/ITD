@@ -76,28 +76,28 @@ WSGI_APPLICATION = 'WebsiteITD.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 # Module used for development and testing
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#         'USER': '',
-#         'PASSWORD': '',
-#         'HOST': '',
-#         'PORT': '',
-#     }
-# }
-
-# Module used for production purposes only!
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'itd',
-        'USER': 'itduser',
-        'PASSWORD': '1122332211',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': '',
     }
 }
+
+# Module used for production purposes only!
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'itd',
+#         'USER': 'itduser',
+#         'PASSWORD': '1122332211',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 
 # Password validation
