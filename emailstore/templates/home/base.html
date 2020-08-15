@@ -39,47 +39,53 @@
 
   <!-- Navigation, NOTE: <a> elements are used to jump to particular area with scrollspy -->
   <span id="home"></span>
-  <nav id="nav-util"
-    class="navbar navbar-light bg-white navber-custom navbar-expand-md justify-content-between sticky-top">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-nav"
-        aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle Navbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand mx-auto d-block order-1 order-md-0 w-25">
-        <img src={% static "img/ITDLogo.jpg" %} width="200px" height="80px" alt="">
-      </a>
-      <div class="navbar-collapse collapse w-25">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://g.page/itdrs/review">Review</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://www.splashtop.com/sos-download?_ga=2.77162903.308159755.1554922056-984735932.1554922056">Splashtop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://housecallpro.com/book/IT-Doctors/5434064e4b1b43a284e1e0dbf6e2eb61?at'tribution=Schedule%20An%20Appointment">Booking</a>
-          </li>
-          <li class="nav-item">
-            <button class="btn btn-primary btn-lg ml-auto">Contact Us!</button>
-          </li>
-        </ul>
+  <nav id="nav-util" class="navbar bg-white navbar-custom navbar-expand-md justify-content-center sticky-top">
+    <a class="navbar-brand mx-auto d-block w-25">
+      <img src={% static "img/ITDLogo.jpg" %} width="200px" height="80px" alt="">
+    </a>
+      <div class="container" margin="0px">
+        <div class="navbar-collapse collapse justify-content-end">
+            <ul class="navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://g.page/itdrs/review">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="https://www.splashtop.com/sos-download?_ga=2.77162903.308159755.1554922056-984735932.1554922056">Splashtop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="https://housecallpro.com/book/IT-Doctors/5434064e4b1b43a284e1e0dbf6e2eb61?at'tribution=Schedule%20An%20Appointment">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+        </div>
       </div>
     </div>
+
+    <!-- Navbar toggler feature (TBA)-->
+    <!-- <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-nav"
+        aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle Navbar">
+        <span class="navdbar-toggler-icon"></span>
+      </button>
+    </div> -->
+
   </nav>
 
   <!-- Masthead -->
+  <span id="masthead"></span>
   <section id="masthead">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
@@ -93,6 +99,7 @@
   </section>
 
   <!--Accreditation Section-->
+  <span id="accreditation"></span>
   <section id="accreditation">
     <div class="my-5 justify-content-center">
       <h1 class="display-4 text-center">Accreditations</h1>
@@ -107,7 +114,8 @@
   </section>
 
   <!-- Services Section -->
-  <section id="service">
+  <span id="services"></span>
+  <section id="services">
     <div class="card">
       <div class="row no-gutters">
         <div class="col-md-6 order-md-1">
@@ -167,7 +175,7 @@
   </section>
 
   <!-- Team Section -->
-  <div><span id="team"></span>
+  <span id="team"></span>
     <section class="testimonials text-center bg-light">
       <div class="container">
         <h2 class="mb-3">Meet the Team</h2>
@@ -216,7 +224,6 @@
         </div>
       </div>
     </section>
-  </div>
 
   <!-- Contact -->
   <div><span id="contact"></span>
