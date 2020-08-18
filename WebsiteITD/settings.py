@@ -87,7 +87,7 @@ DATABASES = {
     }
 }
 
-# # Module used for production purposes only!
+# Module used for production purposes only!
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
